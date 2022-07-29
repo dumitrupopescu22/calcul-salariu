@@ -69,7 +69,7 @@ document.querySelector('.btn').addEventListener('click', function () {
 });
 
 //ferestre mdale
-const modal1 = document.querySelector('.modal1');
+const modal1 = document.querySelector('.modal');
 const modal2 = document.querySelector('.modal2');
 const modal3 = document.querySelector('.modal3');
 const btndescriereSalariu = document.querySelector('.descriereSalariu');
@@ -82,21 +82,29 @@ const closeModalBtn3 = document.querySelector('.closeBtn3');
 console.log(closeModalBtn1, closeModalBtn2, closeModalBtn3);
 console.log(modal1, modal2, modal3);
 
-const openModal = function () {
+btndescriereSalariu.addEventListener('click', function () {
   modal1.classList.remove('hidden');
-  modal2.classList.remove('hidden');
-  modal3.classList.remove('hidden');
-};
+});
 
-btndescriereSalariu.addEventListener('click', openModal);
-btnDeduceri.addEventListener('click', openModal);
-btnNrTichete.addEventListener('click', openModal);
+btnDeduceri.addEventListener('click', function () {
+  modal2.classList.remove('hidden');
+});
+
+btnNrTichete.addEventListener('click', function () {
+  modal3.classList.remove('hidden');
+});
 
 const closeModal = function () {
   modal1.classList.add('hidden');
   modal2.classList.add('hidden');
   modal3.classList.add('hidden');
 };
-closeModalBtn1.addEventListener('click', closeModal);
-closeModalBtn2.addEventListener('click', closeModal);
-closeModalBtn3.addEventListener('click', closeModal);
+closeModalBtn1.addEventListener('click', function () {
+  modal1.classList.add('hidden');
+});
+closeModalBtn2.addEventListener('click', function () {
+  modal2.classList.add('hidden');
+});
+closeModalBtn3.addEventListener('click', function () {
+  modal3.classList.add('hidden');
+});

@@ -88,7 +88,7 @@ a {
   box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.5);
 }
 
-.closeBtn, .closeBtn2, .closeBtn3  {
+.closeBtn1, .closeBtn2, .closeBtn3  {
     position: absolute;
     top: 0.1rem;
     right: 0.5rem;
