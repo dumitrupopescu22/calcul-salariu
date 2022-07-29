@@ -11,12 +11,9 @@
 
     <div class="form">
 
-      <p title="Inclusiv zilele de CO"><b style="color: rgb(52, 52, 150);">Salariu de baza pentru</b>
+      <a href="#inclusiv" class="descriereSalariu">Salariu de baza pentru *</a><b style="color: rgb(52, 52, 150);"></b>
         <input type="number" class="zile" value="20"/> de zile:
         <input type="number" class="salariu" value="3995"  />
-      </p>
-
-
       <p>Spor de vechime <input type="number" class="spv" value="25" />	&nbsp=	&nbsp<b
           class="sporv"
         ></b></p>
@@ -45,12 +42,11 @@
       <p class="impozit">Impozit:</p>
       <br />
 
-      <p title="Sindicat, deduceri pt copii.."><b style="color: rgb(52, 52, 150);">Deduceri : </b><input type="number" class="deduceri" value="15" /></p
-      >
+      <a href="#deduceri"><b style="color: rgb(52, 52, 150);">Deduceri: ** </b></a><input type="number" class="deduceri" value="15" /><br>
 
-      <p title="Nr zile lucratoare minus zile de CO,CM si CCM din urma cu 2 luni"><b style="color: rgb(52, 52, 150);">Numar tichete de masa</b><input type="number" class="nrTichete" /> *
+      <a href="#tichete"><b style="color: rgb(52, 52, 150);">Numar tichete de masa ***</b></a><input type="number" class="nrTichete" /> *
         <input type="valTichet" class="valTichet" value="30"
-      /></p>
+      />
       
       <p class="valoareTichete">Valoare tichete de masa:</p><br>
 
@@ -63,7 +59,14 @@
 
 
       <button class="btn">Calculeaza</button>
+
+      <p id="inclusiv">* Inclusiv zilele de concediu de odihna</p><br>
+      <p id="deduceri">**Sindicat, deduceri copii, etc</p><br>
+      <p id="tichete">***Zilele lucratoare din urma cu 2 luni minus CO,CM, CCM si fara plata</p>
+
+      
     </div>
+
     <script src="script.js"></script>
   </body>
 </html>
