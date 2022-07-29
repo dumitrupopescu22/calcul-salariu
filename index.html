@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Calcul salariu</title>
+  </head>
+  <body style="background-color: rgb(231, 118, 105);">
+
+    <div class="form">
+
+      <p title="Inclusiv zilele de CO"><b style="color: rgb(52, 52, 150);">Salariu de baza pentru</b>
+        <input type="number" class="zile" value="20"/> de zile:
+        <input type="number" class="salariu" value="3995"  />
+      </p>
+
+
+      <p>Spor de vechime <input type="number" class="spv" value="25" />	&nbsp=	&nbsp<b
+          class="sporv"
+        ></b></p>
+
+      <p>Zile de weekend <input type="number" class="week" value="0" />&nbsp=	&nbsp<b
+          class="zileWeekend"
+        ></b> </p>
+
+      <p>Zile de sarbatoare <input type="number" class="sarb" value="0" />&nbsp=	&nbsp<b
+          class="zileSarbatoare"
+        ></b></p>
+
+      <p></p>
+        Ture de noapte <input type="number" class="turen" value="0" />&nbsp=	&nbsp<b
+          class="tureNoapte"
+        ></b>
+      </p>
+      
+
+      <p><b class="totalVenit">Total Venit :</b></p><br>
+
+      <p class="cas">CAS :</p>
+      <br />
+      <p class="cass">CASS :</p>
+      <br />
+      <p class="impozit">Impozit:</p>
+      <br />
+
+      <p title="Sindicat, deduceri pt copii.."><b style="color: rgb(52, 52, 150);">Deduceri : </b><input type="number" class="deduceri" value="15" /></p
+      >
+
+      <p title="Nr zile lucratoare minus zile de CO,CM si CCM din urma cu 2 luni"><b style="color: rgb(52, 52, 150);">Numar tichete de masa</b><input type="number" class="nrTichete" /> *
+        <input type="valTichet" class="valTichet" value="30"
+      /></p>
+      
+      <p class="valoareTichete">Valoare tichete de masa:</p><br>
+
+      <p>Sindicat : <input type="number" class="sindicat" value="15" /></p
+      >
+
+      <p class="salariuNet">Salariu net:</p>
+      <p class="avans">Avans:</p>
+      <p class="chenzinaII">Chenzina II:</p><br>
+
+
+      <button class="btn">Calculeaza</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
