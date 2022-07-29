@@ -110,3 +110,9 @@ closeModalBtn3.addEventListener('click', function () {
   modal3.classList.add('hidden');
   overlay.classList.add('hidden');
 });
+overlay.addEventListener('click', function () {
+  overlay.classList.add('hidden');
+  modal1.classList.add('hidden');
+  modal2.classList.add('hidden');
+  modal3.classList.add('hidden');
+});
