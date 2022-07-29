@@ -66,4 +66,37 @@ document.querySelector('.btn').addEventListener('click', function () {
 
   document.querySelector('.chenzinaII').textContent =
     'Chenzina II: ' + Math.trunc(salNet - avans - sindicat);
-  })
+});
+
+//ferestre mdale
+const modal1 = document.querySelector('.modal1');
+const modal2 = document.querySelector('.modal2');
+const modal3 = document.querySelector('.modal3');
+const btndescriereSalariu = document.querySelector('.descriereSalariu');
+const btnDeduceri = document.querySelector('.descriere-deduceri');
+const btnNrTichete = document.querySelector('.descriereNrTichete');
+const closeModalBtn1 = document.querySelector('.closeBtn1');
+const closeModalBtn2 = document.querySelector('.closeBtn2');
+const closeModalBtn3 = document.querySelector('.closeBtn3');
+
+console.log(closeModalBtn1, closeModalBtn2, closeModalBtn3);
+console.log(modal1, modal2, modal3);
+
+const openModal = function () {
+  modal1.classList.remove('hidden');
+  modal2.classList.remove('hidden');
+  modal3.classList.remove('hidden');
+};
+
+btndescriereSalariu.addEventListener('click', openModal);
+btnDeduceri.addEventListener('click', openModal);
+btnNrTichete.addEventListener('click', openModal);
+
+const closeModal = function () {
+  modal1.classList.add('hidden');
+  modal2.classList.add('hidden');
+  modal3.classList.add('hidden');
+};
+closeModalBtn1.addEventListener('click', closeModal);
+closeModalBtn2.addEventListener('click', closeModal);
+closeModalBtn3.addEventListener('click', closeModal);

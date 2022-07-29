@@ -8,32 +8,35 @@
     <title>Calcul salariu</title>
   </head>
   <body style="background-color: rgb(231, 118, 105);">
+    <div class="fluturas">
+      <button class="descriereSalariu">
+        Salariu de baza pentru</button
+      ><b style="color: rgb(52, 52, 150);"></b>
+      <input type="number" class="zile" value="20" /> de zile:
+      <input type="number" class="salariu" value="3995" />
 
-    <div class="form">
-
-      <a href="#inclusiv" class="descriereSalariu">Salariu de baza pentru *</a><b style="color: rgb(52, 52, 150);"></b>
-        <input type="number" class="zile" value="20"/> de zile:
-        <input type="number" class="salariu" value="3995"  />
-      <p>Spor de vechime <input type="number" class="spv" value="25" />	&nbsp=	&nbsp<b
-          class="sporv"
-        ></b></p>
-
-      <p>Zile de weekend <input type="number" class="week" value="0" />&nbsp=	&nbsp<b
-          class="zileWeekend"
-        ></b> </p>
-
-      <p>Zile de sarbatoare <input type="number" class="sarb" value="0" />&nbsp=	&nbsp<b
-          class="zileSarbatoare"
-        ></b></p>
-
-      <p></p>
-        Ture de noapte <input type="number" class="turen" value="0" />&nbsp=	&nbsp<b
-          class="tureNoapte"
-        ></b>
+      <p>
+        Spor de vechime <input type="number" class="spv" value="25" /> &nbsp=
+        &nbsp<b class="sporv"></b>
       </p>
-      
 
-      <p><b class="totalVenit">Total Venit :</b></p><br>
+      <p>
+        Zile de weekend <input type="number" class="week" value="0" />&nbsp=
+        &nbsp<b class="zileWeekend"></b>
+      </p>
+
+      <p>
+        Zile de sarbatoare <input type="number" class="sarb" value="0" />&nbsp=
+        &nbsp<b class="zileSarbatoare"></b>
+      </p>
+
+      <p>
+        Ture de noapte <input type="number" class="turen" value="0" />&nbsp=
+        &nbsp<b class="tureNoapte"></b>
+      </p>
+
+      <p><b class="totalVenit">Total Venit :</b></p>
+      <br />
 
       <p class="cas">CAS :</p>
       <br />
@@ -42,31 +45,40 @@
       <p class="impozit">Impozit:</p>
       <br />
 
-      <a href="#deduceri"><b style="color: rgb(52, 52, 150);">Deduceri: ** </b></a><input type="number" class="deduceri" value="15" /><br>
+      <button class="descriere-deduceri">Deduceri :</button>
+      <input type="number" class="deduceri" value="15" /><br />
 
-      <a href="#tichete"><b style="color: rgb(52, 52, 150);">Numar tichete de masa ***</b></a><input type="number" class="nrTichete" /> *
-        <input type="valTichet" class="valTichet" value="30"
-      />
-      
-      <p class="valoareTichete">Valoare tichete de masa:</p><br>
+      <button class="descriereNrTichete">Numar tichete de masa</button>
+      <input type="number" class="nrTichete" /> *
+      <input type="valTichet" class="valTichet" value="30" />
 
-      <p>Sindicat : <input type="number" class="sindicat" value="15" /></p
-      >
+      <p class="valoareTichete">Valoare tichete de masa:</p>
+      <br />
+
+      <p>Sindicat : <input type="number" class="sindicat" value="15" /></p>
 
       <p class="salariuNet">Salariu net:</p>
       <p class="avans">Avans:</p>
-      <p class="chenzinaII">Chenzina II:</p><br>
-
+      <p class="chenzinaII">Chenzina II:</p>
+      <br />
 
       <button class="btn">Calculeaza</button>
 
-      <p id="inclusiv">* Inclusiv zilele de concediu de odihna</p><br>
-      <p id="deduceri">**Sindicat, deduceri copii, etc</p><br>
-      <p id="tichete">***Zilele lucratoare din urma cu 2 luni minus CO,CM, CCM si fara plata</p>
+      <p class="modal1 hidden">
+        Inclusiv zilele de concediu de odihna<button class="closeBtn1">
+          x
+        </button>
+      </p>
 
-      
+      <p class="modal2 hidden">
+        Sindicat, deduceri copii, etc<button class="closeBtn2">x</button>
+      </p>
+
+      <p class="modal3 hidden">
+        Zilele lucratoare din urma cu 2 luni minus CO,CM, CCM si fara
+        plata<button class="closeBtn3">x</button>
+      </p>
     </div>
-
     <script src="script.js"></script>
   </body>
 </html>

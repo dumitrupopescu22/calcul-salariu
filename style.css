@@ -6,7 +6,7 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.form {
+.fluturas {
   width: 450px;
   margin: auto;
   border: 3px solid rgb(39, 46, 39);
@@ -40,10 +40,20 @@ input {
 .salariu {
   width: 5rem;
 }
+
+.descriereSalariu, .descriere-deduceri, .descriereNrTichete {
+background-color: white;
+padding: 0.3rem;
+border:1px solid  rgb(226, 175, 130);
+border-radius: 2rem;
+cursor:help
+}
+
 .btn {
+  color: white;
   padding: 2px;
   font-size: medium;
-  background-color: aqua;
+  background-color: rgb(33, 103, 150);
   margin-bottom: 5%;
 }
 
@@ -57,4 +67,35 @@ a {
   text-decoration: none;
   font-size: 1rem;
   font-weight: 600;
+}
+
+/* ferestre modal */
+
+.hidden {
+  display: none;
+}
+
+.modal,
+.modal2,
+.modal3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 2.5rem;
+  border-radius: 25px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.5);
+}
+
+.closeBtn, .closeBtn2, .closeBtn3  {
+    position: absolute;
+    top: 0.1rem;
+    right: 0.5rem;
+    font-size: 2rem;
+    color: #333;
+    cursor: pointer;
+    border: none;
+    background: none;
+  }
 }
