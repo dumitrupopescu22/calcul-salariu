@@ -44,7 +44,7 @@ document.querySelector('.btn').addEventListener('click', function () {
   console.log('venitNet', venitNet);
   const bazaImpozit = venitNet - deduceri + valTichete;
   const impozit = Math.trunc(bazaImpozit * 0.1);
-  document.querySelector('.impozit').textContent = 'Impozit: ' + impozit;
+  document.querySelector('.impozit').textContent = 'Impozit 10%: ' + impozit;
 
   //Salariul net
   const salNet = venitNet - impozit - sindicat;
