@@ -7,7 +7,7 @@
 }
 
 .fluturas {
-  width: 450px;
+  max-width: 600px;
   margin: auto;
   border: 8px ridge rgb(226, 157, 97);
   background-color: rgb(226, 175, 130);
