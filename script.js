@@ -23,7 +23,6 @@ document.querySelector('.btn').addEventListener('click', function () {
   ).textContent = Math.trunc((salariuDeBaza / zile) * zileSarbatoare * 2));
 
   const valTichete = Math.trunc(valTichet * nrTichete);
-  console.log(valTichete);
 
   const salariuBrut =
     salariuDeBaza +
@@ -42,16 +41,16 @@ document.querySelector('.btn').addEventListener('click', function () {
 
   //impozit 10%
   const venitNet = salariuBrut - salariuBrut * 0.35;
-  console.log(venitNet);
+  console.log('venitNet', venitNet);
   const bazaImpozit = venitNet - deduceri + valTichete;
   const impozit = Math.trunc(bazaImpozit * 0.1);
   document.querySelector('.impozit').textContent = 'Impozit: ' + impozit;
 
   //Salariul net
-  const salNet = venitNet - impozit;
-
-  const avans = Math.trunc(salariuDeBaza * 0.33);
-  const lichidare = salariuDeBaza - avans - sindicat;
+  const salNet = venitNet - impozit - sindicat;
+  console.log(salNet);
+  const avans = salariuDeBaza * 0.33;
+  const chenzinaII = salNet - avans;
 
   document.querySelector('.totalVenit').textContent =
     'Total Venit : ' + salariuBrut;
@@ -62,10 +61,10 @@ document.querySelector('.btn').addEventListener('click', function () {
   document.querySelector('.salariuNet').textContent =
     'Salariu net :' + Math.trunc(salNet);
 
-  document.querySelector('.avans').textContent = 'Avans: ' + avans;
+  document.querySelector('.avans').textContent = 'Avans: ' + Math.trunc(avans);
 
   document.querySelector('.chenzinaII').textContent =
-    'Chenzina II: ' + Math.trunc(salNet - avans - sindicat);
+    'Chenzina II: ' + Math.trunc(chenzinaII);
 });
 
 //ferestre mdale
@@ -79,9 +78,6 @@ const closeModalBtn1 = document.querySelector('.closeBtn1');
 const closeModalBtn2 = document.querySelector('.closeBtn2');
 const closeModalBtn3 = document.querySelector('.closeBtn3');
 const overlay = document.querySelector('.overlay');
-
-console.log(closeModalBtn1, closeModalBtn2, closeModalBtn3);
-console.log(modal1, modal2, modal3);
 
 btndescriereSalariu.addEventListener('click', function () {
   modal1.classList.remove('hidden');
