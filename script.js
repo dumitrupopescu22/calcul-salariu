@@ -68,7 +68,7 @@ document.querySelector('.btn').addEventListener('click', function () {
 });
 
 //ferestre modale
-const modal1 = document.querySelector('.modal');
+const modal1 = document.querySelector('.modal1');
 const modal2 = document.querySelector('.modal2');
 const modal3 = document.querySelector('.modal3');
 const btndescriereSalariu = document.querySelector('.descriereSalariu');
