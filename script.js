@@ -79,36 +79,59 @@ const closeModalBtn2 = document.querySelector('.closeBtn2');
 const closeModalBtn3 = document.querySelector('.closeBtn3');
 const overlay = document.querySelector('.overlay');
 
-btndescriereSalariu.addEventListener('click', function () {
-  modal1.classList.remove('hidden');
-  overlay.classList.remove('hidden');
-});
+// console.log(closeModalBtn1, closeModalBtn2, closeModalBtn3);
 
-btnDeduceri.addEventListener('click', function () {
-  modal2.classList.remove('hidden');
-  overlay.classList.remove('hidden');
-});
+// btndescriereSalariu.addEventListener('click', function () {
+//   modal1.classList.remove('hidden');
+//   overlay.classList.remove('hidden');
+// });
 
-btnNrTichete.addEventListener('click', function () {
-  modal3.classList.remove('hidden');
-  overlay.classList.remove('hidden');
-});
+// btnDeduceri.addEventListener('click', function () {
+//   modal2.classList.remove('hidden');
+//   overlay.classList.remove('hidden');
+// });
 
-closeModalBtn1.addEventListener('click', function () {
-  modal1.classList.add('hidden');
-  overlay.classList.add('hidden');
-});
-closeModalBtn2.addEventListener('click', function () {
-  modal2.classList.add('hidden');
-  overlay.classList.add('hidden');
-});
-closeModalBtn3.addEventListener('click', function () {
-  modal3.classList.add('hidden');
-  overlay.classList.add('hidden');
-});
-overlay.addEventListener('click', function () {
-  overlay.classList.add('hidden');
-  modal1.classList.add('hidden');
-  modal2.classList.add('hidden');
-  modal3.classList.add('hidden');
-});
+// btnNrTichete.addEventListener('click', function () {
+//   modal3.classList.remove('hidden');
+//   overlay.classList.remove('hidden');
+// });
+
+// closeModalBtn1.addEventListener('click', function () {
+//   modal1.classList.add('hidden');
+//   overlay.classList.add('hidden');
+// });
+// closeModalBtn2.addEventListener('click', function () {
+//   modal2.classList.add('hidden');
+//   overlay.classList.add('hidden');
+// });
+// closeModalBtn3.addEventListener('click', function () {
+//   modal3.classList.add('hidden');
+//   overlay.classList.add('hidden');
+// });
+// overlay.addEventListener('click', function () {
+//   overlay.classList.add('hidden');
+//   modal1.classList.add('hidden');
+//   modal2.classList.add('hidden');
+//   modal3.classList.add('hidden');
+// });
+
+const deschidere = [btndescriereSalariu, btnDeduceri, btnNrTichete];
+const modal = [modal1, modal2, modal3];
+
+for (let i = 0; i < deschidere.length; i++) {
+  deschidere[i].addEventListener('click', function () {
+    modal[i].classList.remove('hidden');
+    overlay.classList.remove('hidden');
+  });
+}
+
+const close = [closeModalBtn1, closeModalBtn2, closeModalBtn3, overlay];
+
+for (let i = 0; i < close.length; i++) {
+  close[i].addEventListener('click', function () {
+    modal1.classList.add('hidden');
+    modal2.classList.add('hidden');
+    modal3.classList.add('hidden');
+    overlay.classList.add('hidden');
+  });
+}
